@@ -1,14 +1,14 @@
 import torch
-from torchvision.models import resnet50, ResNet50_Weights
+from torchvision.models import vgg16, VGG16_Weights
 from divina_classifier.globals import DEVICE
 from divina_classifier.utils.image_processing import preprocess_image
 from PIL import Image
 from typing import Union
 
-class ResNet50Classifier:
+class VGG16Classifier:
     def __init__(self, compile=False):
-        self.weights = ResNet50_Weights.DEFAULT
-        self.model = resnet50(weights=self.weights)
+        self.weights = VGG16_Weights.DEFAULT
+        self.model = vgg16(weights=self.weights)
 
         if compile:
             self.model = torch.compile(self.model)

@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.scripts]
-divina-classify = "divina_classifier.main:main"
+divina-classify = "divina_classifier.__main__:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/divina_classifier"]

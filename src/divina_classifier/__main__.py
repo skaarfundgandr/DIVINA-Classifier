@@ -2,6 +2,8 @@ from PIL import Image
 import sys
 import os
 from divina_classifier.models.resnet import ResNet50Classifier
+from divina_classifier.models.vgg16 import VGG16Classifier
+
 
 def main():
     if len(sys.argv) < 2:
@@ -14,8 +16,8 @@ def main():
         print(f"Error: File '{image_path}' not found.")
         return
 
-    print(f"Initializing ResNet50 model...")
-    classifier = ResNet50Classifier()
+    print(f"Initializing VGG16 model...")
+    classifier = VGG16Classifier()
 
     print(f"Processing image: {image_path}...")
     try:
