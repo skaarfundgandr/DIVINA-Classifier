@@ -4,13 +4,13 @@ Marine life classification engine for the DIVINA Project.
 ## Installation
 
 ```bash
-pip install git+https://github.com/skaarfundgandr/DIVINA-Classifier.git
+pip install git+https://github.com/Team-Kalubihan/DIVINA-Classifier.git
 ```
 
 Or using `uv`:
 
 ```bash
-uv add "divina-classifier @ git+https://github.com/skaarfundgandr/DIVINA-Classifier.git"
+uv add "divina-classifier @ git+https://github.com/Team-Kalubihan/DIVINA-Classifier.git"
 ```
 
 ## Usage as a Library
